@@ -1,3 +1,4 @@
+//berikut adalah program page untuk memasukan biodata untuk user
 package calorie;
 
 import java.awt.EventQueue;
@@ -23,12 +24,12 @@ public class input extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
-
+//untuk pemasukan data, terdiri dari age,gender,height dan weight untuk dimasukan oleh user
 	public String age = "12";
     public String gender;
     public String height;
     public String weight;
-    
+ //apabila user telah memasukan input, user akan dibawa kedalam page inheritance dimana mereka akan memilih sport yang ingin diikuti   
     public void insert(ArrayList<input> data_user) {
     	data_user.clear();
     	age = textField.getText();
@@ -65,7 +66,7 @@ public class input extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Create the frame -> format tampilan untuk user biodata input
 	 */
 	public input() {
 		setTitle("Please input your data !");
