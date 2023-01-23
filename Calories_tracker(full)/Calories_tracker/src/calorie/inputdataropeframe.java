@@ -1,3 +1,4 @@
+//Berikut adalah code untuk page/frame apabila user memilih ropejumping
 package calorie;
 
 import java.awt.EventQueue;
