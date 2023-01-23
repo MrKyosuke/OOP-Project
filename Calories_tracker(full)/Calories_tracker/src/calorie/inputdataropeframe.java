@@ -21,6 +21,8 @@ import java.awt.Font;
 import javax.swing.ImageIcon;
 //--------------------------------------------------------------------------------------------------------------------------
 //Program akan melakukan perhitungan kalori dari biodata yang telah dimasukan oleh user, dari code berikut
+
+//Class inputdataropeframe melakukan inherit pada attribut dari input SuperClass
 public class inputdataropeframe extends input {
 
 	public static int time, h, m, s, distance, icon = 3;
