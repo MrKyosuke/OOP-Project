@@ -19,7 +19,8 @@ import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.ImageIcon;
-
+//--------------------------------------------------------------------------------------------------------------------------
+//Program akan melakukan perhitungan kalori dari biodata yang telah dimasukan oleh user, dari code berikut
 public class inputdatarunframe extends input {
 	public static int time, h, m, s, distance, icon = 1;
 	public static double burned;
@@ -33,7 +34,7 @@ public class inputdatarunframe extends input {
 	private static JTextField textField;
 	private static JTextField textField_1;
 	private static JTextField textField_2;
-	
+//--------------------------------------------------------------------------------------------------------------------------		
 	static int temp_weight;
     public static void go(ArrayList<input> data_user) {
 		int temp_age = Integer.parseInt(data_user.get(0).age);
@@ -57,7 +58,7 @@ public class inputdatarunframe extends input {
     	burned = (time*(16*3.5*temp_weight)/200);
     	System.out.println(burned);
     }
-
+//--------------------------------------------------------------------------------------------------------------------------
 	/**
 	 * Launch the application.
 	 */
@@ -74,9 +75,9 @@ public class inputdatarunframe extends input {
 			}
 		});
 	}
-
+//--------------------------------------------------------------------------------------------------------------------------
 	/**
-	 * Create the frame.
+	 * Create the frame. -> Berikut adalah code untuk tampilan/design (GUI) page Cycling
 	 */
 	public inputdatarunframe() {
 		setTitle("Input Data");
