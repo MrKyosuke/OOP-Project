@@ -16,6 +16,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+// class input mengextends dari library JFrame agar bisa menggunakan GUInya
 public class input extends JFrame {
 
 	public ArrayList<input> data_user = new ArrayList<input>();
