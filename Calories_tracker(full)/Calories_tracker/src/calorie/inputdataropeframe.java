@@ -1,4 +1,4 @@
-//Berikut adalah code untuk page/frame apabila user memilih ropejumping
+//Berikut adalah code untuk page/frame apabila user memilih Rope Jumping
 package calorie;
 
 import java.awt.EventQueue;
@@ -19,7 +19,8 @@ import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.ImageIcon;
-
+//--------------------------------------------------------------------------------------------------------------------------
+//Program akan melakukan perhitungan kalori dari biodata yang telah dimasukan oleh user, dari code berikut
 public class inputdataropeframe extends input {
 
 	public static int time, h, m, s, distance, icon = 3;
@@ -34,7 +35,8 @@ public class inputdataropeframe extends input {
 	private static JTextField textField;
 	private static JTextField textField_1;
 	private static JTextField textField_2;
-	
+//--------------------------------------------------------------------------------------------------------------------------	
+	//Untuk code dibawah, kita menggunakan rumus tersebut untuk menghitung kalori yang dibakar pada olahraga Rope Jumping
 	static int temp_weight;
     public static void go(ArrayList<input> data_user) {
 		int temp_age = Integer.parseInt(data_user.get(0).age);
@@ -58,7 +60,7 @@ public class inputdataropeframe extends input {
     	burned = (time*(10*3.5*temp_weight)/200);
     	System.out.println(burned);
     }
-
+//--------------------------------------------------------------------------------------------------------------------------
 	/**
 	 * Launch the application.
 	 */
@@ -75,8 +77,9 @@ public class inputdataropeframe extends input {
 			}
 		});
 	}
+//--------------------------------------------------------------------------------------------------------------------------
 	/**
-	 * Create the frame.
+	 * Create the frame. -> Berikut adalah code untuk tampilan/design (GUI) page Rope Jumping
 	 */
 	public inputdataropeframe() {
 		setTitle("Input Data");
