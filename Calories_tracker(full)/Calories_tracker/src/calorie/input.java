@@ -15,7 +15,8 @@ import java.util.ArrayList;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+//--------------------------------------------------------------------------------------------------------------------------
+//Class input meng-inherit / ekstend dari library JFrame agar dapat menggunakan GUI nya
 public class input extends JFrame {
 
 	public ArrayList<input> data_user = new ArrayList<input>();
@@ -24,11 +25,15 @@ public class input extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
+//--------------------------------------------------------------------------------------------------------------------------
 //untuk pemasukan data, terdiri dari age,gender,height dan weight untuk dimasukan oleh user
 	public String age = "12";
     public String gender;
     public String height;
     public String weight;
+//--------------------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------------------------------------
  //apabila user telah memasukan input, user akan dibawa kedalam page inheritance dimana mereka akan memilih sport yang ingin diikuti   
     public void insert(ArrayList<input> data_user) {
     	data_user.clear();
@@ -48,6 +53,7 @@ public class input extends JFrame {
         this.height = height;
         this.weight = weight;
     }
+//--------------------------------------------------------------------------------------------------------------------------
 	/**
 	 * Launch the application.
 	 */
