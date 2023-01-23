@@ -1,3 +1,4 @@
+//Berikut adalah page untuk memasukan data, apabila user memilih Cycling
 package calorie;
 
 import java.awt.EventQueue;
@@ -18,7 +19,8 @@ import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.ImageIcon;
-
+//--------------------------------------------------------------------------------------------------------------------------
+//Program akan melakukan perhitungan kalori dari biodata yang telah dimasukan oleh user, dari code berikut
 public class inputdatacycframe extends input {
 
 	public static int time, h, m, s, distance, icon = 2;
@@ -33,7 +35,8 @@ public class inputdatacycframe extends input {
 	private static JTextField textField;
 	private static JTextField textField_1;
 	private static JTextField textField_2;
-	
+//--------------------------------------------------------------------------------------------------------------------------	
+	//Untuk code dibawah, kita menggunakan rumus tersebut untuk menghitung kalori yang dibakar pada olahraga Cycling
 	static int temp_weight;
     public static void go(ArrayList<input> data_user) {
 		int temp_age = Integer.parseInt(data_user.get(0).age);
@@ -57,7 +60,7 @@ public class inputdatacycframe extends input {
     	burned = (time*(10*3.5*temp_weight)/200);
     	System.out.println(burned);
     }
-
+//--------------------------------------------------------------------------------------------------------------------------
 	/**
 	 * Launch the application.
 	 */
@@ -74,8 +77,9 @@ public class inputdatacycframe extends input {
 			}
 		});
 	}
+//--------------------------------------------------------------------------------------------------------------------------
 	/**
-	 * Create the frame.
+	 * Create the frame -> Berikut adalah code untuk tampilan/design (GUI) page Cycling
 	 */
 	public inputdatacycframe() {
 		setTitle("Input Data");
