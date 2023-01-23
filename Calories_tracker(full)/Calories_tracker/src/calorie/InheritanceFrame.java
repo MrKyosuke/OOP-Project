@@ -1,3 +1,4 @@
+//berikut adalah page program untuk inheritance 
 package calorie;
 
 import java.awt.EventQueue;
@@ -35,7 +36,8 @@ public class InheritanceFrame extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	  Create the frame -> dari frame page tersebut, user akan memilih dari ketiga pilihan yang telah di provide
+	  yakni, Running, Cycling dan Rope Jumping
 	 */
 	public InheritanceFrame() {
 		setBackground(new Color(255, 255, 255));
@@ -49,6 +51,7 @@ public class InheritanceFrame extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//Button function untuk 'Running'
 		JButton btnNewButton = new JButton("Running");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -60,6 +63,7 @@ public class InheritanceFrame extends JFrame {
 		btnNewButton.setBounds(91, 280, 89, 23);
 		contentPane.add(btnNewButton);
 		
+		//Button function untuk 'Cycling'
 		JButton btnNewButton_1 = new JButton("Cycling");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -71,6 +75,7 @@ public class InheritanceFrame extends JFrame {
 		btnNewButton_1.setBounds(363, 280, 89, 23);
 		contentPane.add(btnNewButton_1);
 		
+		//Button function untuk 'Running'
 		JButton btnNewButton_2 = new JButton("Rope Jumping");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -87,6 +92,7 @@ public class InheritanceFrame extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
+		//Tampilan untuk running button
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setBounds(0, -47, 185, 265);
 		panel.add(lblNewLabel);
@@ -97,6 +103,7 @@ public class InheritanceFrame extends JFrame {
 		contentPane.add(panel_2);
 		panel_2.setLayout(null);
 		
+		//Tampilan untuk rope jumping button
 		JLabel lblNewLabel_2 = new JLabel("New label");
 		lblNewLabel_2.setBackground(SystemColor.textHighlight);
 		lblNewLabel_2.setIcon(new ImageIcon(InheritanceFrame.class.getResource("/calorie/img/rope(2).png")));
@@ -108,6 +115,7 @@ public class InheritanceFrame extends JFrame {
 		panel_1.setBounds(320, 51, 168, 218);
 		contentPane.add(panel_1);
 		
+		//Tampilan untuk cycling button
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setIcon(new ImageIcon(InheritanceFrame.class.getResource("/calorie/img/cycling.jpg")));
 		lblNewLabel_1.setBounds(-17, -81, 233, 378);
