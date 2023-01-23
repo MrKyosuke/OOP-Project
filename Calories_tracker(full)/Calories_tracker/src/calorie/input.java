@@ -64,7 +64,7 @@ public class input extends JFrame {
 			}
 		});
 	}
-
+//----------------------------------------------------------------------------------------------------------------------------------
 	/**
 	 * Create the frame -> format tampilan untuk user biodata input
 	 */
@@ -77,6 +77,8 @@ public class input extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+//----------------------------------------------------------------------------------------------------------------------------------
+		//Berikut adalah bagian label/word dari input yang perlu diisi oleh user
 		
 		JLabel lblNewLabel = new JLabel("Age");
 		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 19));
@@ -102,6 +104,8 @@ public class input extends JFrame {
 		textField.setBounds(112, 46, 109, 23);
 		contentPane.add(textField);
 		textField.setColumns(10);
+//----------------------------------------------------------------------------------------------------------------------------------
+		//Berikut adalah bagian untuk menampilkan pilihan gender dari user
 		
 		final JRadioButton rdbtnNewRadioButton = new JRadioButton("Male");
 		rdbtnNewRadioButton.setFont(new Font("Times New Roman", Font.PLAIN, 19));
@@ -112,7 +116,7 @@ public class input extends JFrame {
 		rdbtnFemale.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		rdbtnFemale.setBounds(197, 102, 116, 23);
 		contentPane.add(rdbtnFemale);
-		
+//----------------------------------------------------------------------------------------------------------------------------------
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
 		textField_1.setBounds(112, 160, 109, 23);
