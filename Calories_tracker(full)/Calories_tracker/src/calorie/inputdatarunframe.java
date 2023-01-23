@@ -1,3 +1,4 @@
+//Berikut adalah page untuk memasukan data, apabila user memilih Running
 package calorie;
 
 import java.awt.EventQueue;
@@ -77,7 +78,7 @@ public class inputdatarunframe extends input {
 	}
 //--------------------------------------------------------------------------------------------------------------------------
 	/**
-	 * Create the frame. -> Berikut adalah code untuk tampilan/design (GUI) page Cycling
+	 * Create the frame. -> Berikut adalah code untuk tampilan/design (GUI) page Running
 	 */
 	public inputdatarunframe() {
 		setTitle("Input Data");
