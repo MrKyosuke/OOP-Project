@@ -21,6 +21,8 @@ import java.awt.Font;
 import javax.swing.ImageIcon;
 //--------------------------------------------------------------------------------------------------------------------------
 //Program akan melakukan perhitungan kalori dari biodata yang telah dimasukan oleh user, dari code berikut
+
+//Class inputdatacycframe meng-inheritkan data field dari SuperClass input
 public class inputdatacycframe extends input {
 
 	public static int time, h, m, s, distance, icon = 2;
