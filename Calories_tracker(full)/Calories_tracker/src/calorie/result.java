@@ -34,8 +34,7 @@ public class result extends JFrame {
 			}
 		});
 	}
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-	//Berikut adalah code untuk memasukan hasil data kedalam format yang sesuai dengan tampilan yang telah dibuat (time, burned calories, dll)  
+
 	/**
 	 * Create the frame.
 	 */
@@ -46,7 +45,18 @@ public class result extends JFrame {
 		burned_result = burned;
 		iconed = icon;
 	}
-//--------------------------------------------------------------------------------------------------------------------------------------------------	
+	
+	abstract class results{
+		abstract void printer();
+	}
+	class keluar extends results{
+		@Override
+		public void printer() {
+			System.out.println("nice job");
+		}
+	}
+	
+	
 	public result() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 449, 534);
@@ -68,8 +78,7 @@ public class result extends JFrame {
 		});
 		btnNewButton.setBounds(146, 386, 133, 31);
 		contentPane.add(btnNewButton);
-	//--------------------------------------------------------------------------------------------------------------------------------------------------
-		//Berikut adalah design dari frame Final Result
+		
 		JLabel lblNewLabel = new JLabel("Burned Calories:");
 		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		lblNewLabel.setBounds(96, 321, 133, 31);
@@ -94,7 +103,7 @@ public class result extends JFrame {
 		panel.setBounds(99, 123, 220, 136);
 		contentPane.add(panel);
 		panel.setLayout(null);
-//--------------------------------------------------------------------------------------------------------------------------------------------------		
+		
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setBounds(0, 0, 260, 150);
 		panel.add(lblNewLabel_1);
@@ -105,13 +114,13 @@ public class result extends JFrame {
 			lblNewLabel_1.setIcon(new ImageIcon(result.class.getResource("/calorie/img/cycling.jpg")));
 		}
 		else lblNewLabel_1.setIcon(new ImageIcon(result.class.getResource("/calorie/img/rope(2).png")));
-		//Data Waktu yang dimasukan oleh user akan dimasukan dalam format dibawah
+		
 		JLabel lblWaktu = new JLabel("waktu");
 		lblWaktu.setText(Integer.toString(time_result)+" minutes");
 		lblWaktu.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		lblWaktu.setBounds(176, 280, 259, 31);
 		contentPane.add(lblWaktu);
-		//Data Burned Calories yang dikalkulasi oleh program akan dimasukan dalam format dibawah
+		
 		JLabel lblBurned = new JLabel("burned");
 		lblBurned.setText(Double.toString(burned_result)+" kcal");
 		lblBurned.setFont(new Font("Times New Roman", Font.PLAIN, 19));
